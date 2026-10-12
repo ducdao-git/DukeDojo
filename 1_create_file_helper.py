@@ -26,4 +26,4 @@ def create_py_file(problem_title):
         file.write(script_content)
 
 
-create_py_file("Kth Smallest Integer in BST")
+create_py_file("Valid Binary Search Tree")
