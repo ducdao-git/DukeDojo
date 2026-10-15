@@ -26,4 +26,4 @@ def create_py_file(problem_title):
         file.write(script_content)
 
 
-create_py_file("Flood Fill")
+create_py_file("Shortest Path in Binary Matrix")
