@@ -24,7 +24,8 @@ class Solution:  # runtime O(n^2), space O(n^2)
         queue.append((r, c))
 
         step = 0
-        checked = set()
+        visited = set()
+        visited.add((r, c))
 
         while queue:
             step += 1
@@ -35,8 +36,6 @@ class Solution:  # runtime O(n^2), space O(n^2)
                 if r == c == N - 1:
                     return step
 
-                checked.add((r, c))
-
                 for dr, dc in DIRECTIONS:
                     _r = r + dr
                     _c = c + dc
@@ -45,11 +44,12 @@ class Solution:  # runtime O(n^2), space O(n^2)
                         min(_r, _c) < 0
                         or max(_r, _c) == N
                         or grid[_r][_c] == 1
-                        or (_r, _c) in checked
+                        or (_r, _c) in visited
                     ):
                         continue
 
                     queue.append((_r, _c))
+                    visited.add((_r, _c))
 
         return -1
 
