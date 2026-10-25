@@ -25,4 +25,4 @@ def create_py_file(problem_title):
         file.write(script_content)
 
 
-create_py_file("Remove Duplicates From Sorted Array II")
+create_py_file("Best Time to Buy and Sell Stock")
