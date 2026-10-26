@@ -25,4 +25,4 @@ def create_py_file(problem_title):
         file.write(script_content)
 
 
-create_py_file("Range Sum Query 2D Immutable")
+create_py_file("Subarray Sum Equals K")
