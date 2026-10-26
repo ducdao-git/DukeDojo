@@ -25,4 +25,4 @@ def create_py_file(problem_title):
         file.write(script_content)
 
 
-create_py_file("Best Time to Buy and Sell Stock")
+create_py_file("Range Sum Query 2D Immutable")
