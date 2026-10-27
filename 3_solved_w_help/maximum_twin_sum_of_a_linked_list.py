@@ -1,6 +1,3 @@
-from typing import Optional
-
-
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -9,7 +6,7 @@ class ListNode:
 
 
 class Solution2:  # runtime O(n), space O(n)
-    def pairSum(self, head: Optional[ListNode]) -> int:
+    def pairSum(self, head: ListNode) -> int:
         # because linked list len is even, and we want mid point to be the left point, thus fast need to start at slow+1
         # example: linked_list_len=4, if want mid point at index 1, then slow_index=0 and fast_index=1
         slow, fast = head, head.next
@@ -32,7 +29,7 @@ class Solution2:  # runtime O(n), space O(n)
 
 
 class Solution:  # runtime O(n), space O(1)
-    def pairSum(self, head: Optional[ListNode]) -> int:
+    def pairSum(self, head: ListNode) -> int:
         slow, fast = head, head
         prev = None
 

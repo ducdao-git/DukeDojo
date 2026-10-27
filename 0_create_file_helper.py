@@ -2,7 +2,7 @@ import os
 
 script_content = """\
 # runtime O(?), space O(?)
-
+pass
 
 # Question URL:
 # Solution: ? -- runtime O(?), space O(?)
@@ -25,4 +25,4 @@ def create_py_file(problem_title):
         file.write(script_content)
 
 
-create_py_file("Subarray Sum Equals K")
+create_py_file("Find the Duplicate Number")

@@ -1,6 +1,3 @@
-from typing import Optional
-
-
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -9,7 +6,7 @@ class ListNode:
 
 
 class Solution:  # runtime O(n), space O(1)
-    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def middleNode(self, head: ListNode) -> ListNode:
         slow, fast = head, head
 
         while fast and fast.next:
