@@ -25,4 +25,4 @@ def create_py_file(problem_title):
         file.write(script_content)
 
 
-create_py_file("Find the Duplicate Number")
+create_py_file("Merge Two Sorted Linked Lists")
